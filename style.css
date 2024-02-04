@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button,
+a {
+  font-size: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --hover-cyan: hsla(171, 66%, 44%, 0.8);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --hover-blue: hsla(233, 100%, 69%, 0.8);
+  --shadow-Cyan: hsl(171, 75%, 37%);
+  --shadow-Blue: hsl(233, 71%, 39%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --footer-bg: hsl(210, 11%, 89%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+header {
+  padding: 7.5em 2em 4em 2em;
+}
+
+section {
+  padding: 0 1.8em 0 1.8em;
+  margin-bottom: 8.5em;  
+}
+
+main {
+  display: grid;
+  padding: 0 1.8em 8.5em 1.8em;
+}
+
+main > img {
+  width: 125px;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 1em;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+}
+
+main > p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2.4em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button:nth-child(1) {
+  background: var(--Strong-Cyan);
+  box-shadow: 0 2px 5px 0 var(--shadow-Cyan), 0 3px 0 0 var(--shadow-Cyan);
+  margin-bottom: 1.5em;
+}
+
+.buttons button:nth-child(2) {
+  background: var(--Light-Blue);
+  box-shadow: 0 2px 10px 0 var(--Light-Blue), 0 3px 0 0 var(--shadow-Blue);
+}
+
+.buttons button {
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  overflow: hidden;
+}
+
+.buttons button a {
+  padding: 0.9em 0;
+  display: block;
+  font-weight: 600;
+}
+
+.buttons button:nth-child(1):hover {
+  background: var(--hover-cyan);
+}
+
+.buttons button:nth-child(2):hover {
+  background: var(--hover-blue);
+}
+
+section > div h2 {
+  color: var(--Dark-Grayish-Blue);
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+section > div > p {
+  color: var(--Grayish-Blue);
+  text-align: center;
+  margin-bottom: 4em;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.keeptrack div .text-contents {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.keeptrack div .text-contents > div:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.keeptrack div .text-contents h3 {
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 0.5em;
+}
+
+.keeptrack div .text-contents p {
+  line-height: 1.5;
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+}
+
+section .features {
+  text-align: center;
+}
+
+.features .features-list div:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.features-list > div img {
+  width: 45px;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.features-list > div h3 {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  margin-bottom: 1em;
+  white-space: nowrap;
+}
+
+.features-list > div p {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* partnership section */
+.partnership ul {
+  display: grid;
+  justify-content: center;
+}
+
+section .partnership ul li:not(:last-child) {
+  margin-bottom: 3.5em;
+}
+
+.partnership ul li img {
+  width: 130px;
+}
+
+/* footer */
+footer {
+  background: var(--footer-bg);
+  width: 100%;
+  padding: 3em 2em;
+  text-align: center;
+}
+
+footer .logo {
+  width: 58px;
+  margin-bottom: 2em;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > div .link:not(:last-child) {
+  margin-bottom: 1.8em;
+}
+
+footer > div .links li:first-child {
+  margin-bottom: 1.8em;
+}
+
+footer > div .links li {
+  white-space: nowrap;
+}
+
+footer > div .links li a {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 400;
+}
+
+footer > div .links li a:hover {
+  color: var(--Strong-Cyan);
+}
+
+footer > div .social-icons {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+footer > div .social-icons li:not(:last-child) {
+  margin-right: 1.5em;
+}
+
+footer > div .social-icons li i {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 25px;
+}
+
+footer > div .social-icons li i:hover {
+  color: var(--Strong-Cyan);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(images/bg-header-desktop.png);
+  }
+
+  header {
+    padding: 7.1em 0 0em 0;
+  }
+
+  main {
+    padding-bottom: 5em;
+  }
+
+  main h1 {
+    font-size: 2.8rem;
+    margin: 1.35em 0 0.45em 0;
+  }
+
+  section > div h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.6em;
+  }
+
+  section > div > p,
+  main > p {
+    width: 69.5%;
+    margin-inline: auto;
+    font-size: 1.25rem;
+  }
+
+  section > div > p {
+    width: 60%;
+    margin-inline: auto;
+    font-size: 1.12rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin: auto;
+    gap: 1em;
+    align-items: flex-start;
+  }
+
+  .buttons button {
+    width: 225px;
+  }
+
+  .buttons button:nth-child(1) {
+    margin-bottom: 6;
+  }
+
+  section {
+    padding: 0 4em;
+    margin-bottom: 8em;
+  }
+
+  .keeptrack > div {
+    display: flex;
+    position: relative;
+    gap: 6.2em;
+    align-items: center;
+    left: -2em;
+  }
+
+  .section-1{
+    padding: 0;
+  }
+
+  .keeptrack .computer img {
+    max-width: 753px;
+    width: 100%;
+    height: auto;
+  }
+
+  .keeptrack div .text-contents {
+    text-align: left;
+    margin-top: 0em;
+  }
+
+  .keeptrack div .text-contents h3 {
+    font-size: 1.5rem;
+  }
+
+  .keeptrack div .text-contents > div:not(:last-child) {
+    margin-bottom: 5em;
+  }
+
+  .access-clipboard img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+  }
+
+  .features .features-list div:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .features .features-list {
+    display: flex;
+    align-items: baseline;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+
+  .features .features-list div {
+    flex: 1;
+  }
+
+  .partnership ul {
+    display: flex;
+    gap: 6em;
+    flex-wrap: wrap;
+  }
+
+  section .partnership ul li:not(:last-child) {
+    margin-bottom: 0em;
+  }
+
+  section .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section:nth-child(5) {
+    padding-bottom: 4em;
+  }
+
+  footer {
+    padding: 3em 4em 3em 4em;
+  }
+
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    grid-column: 1/2;
+  }
+
+  footer > div div {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    align-items: start;
+  }
+
+  footer > div .links li:first-child {
+    margin-bottom: 1.5em;
+  }
+
+  footer > div .social-icons {
+    grid-column: 6/7;
+    margin-top: 0;
+    justify-content: end;
+  }
+
+  footer > div .social-icons li:not(:last-child) {
+    margin-right: 1.1em;
+  }
+
+  footer > div .social-icons li i {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 0 5em;
+  }
+
+  .partnership ul {
+    justify-content: space-between;
+  }
+
+  .keeptrack > div {
+    padding-right: 5em;
+  }
+
+  footer {
+    padding: 3em 5em 3em 5em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    padding: 0 8.8em
+  }
+
+  .keeptrack > div {
+    padding-right: 8.8em;
+  }
+
+  footer {
+    padding: 3em 8.8em 3em 8.8em;
+  }
+}
